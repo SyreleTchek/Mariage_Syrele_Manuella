@@ -12,16 +12,14 @@
     <a href="{% url 'home' %}" class="navbar-brand">Home</a>
     <a href="{% url 'about' %}" class="navbar-item">About</a>
     <a href="{% url 'contact' %}" class="navbar-item">Contact</a>
-    <a href="{% url 'log' %}" class="navbar-item">Log Message</a>
+    <a href="{% url 'liste_invites' %}" class="navbar-item">Liste des invites</a>
+    <a href="{% url 'saisie_donnees_invite' %}" class="navbar-item">Enregistrement des invites</a>
 </div>
 
 <div class="body-content">
     {% block content %}
     {% endblock %}
     <hr/>
-    <footer>
-        <p>&copy; 2018</p>
-    </footer>
 </div>
 </body>
 </html>

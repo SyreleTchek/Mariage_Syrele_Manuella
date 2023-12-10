@@ -1,7 +1,7 @@
 from django import forms
-from hello.models import LogMessage
+from hello.models import Invite
 
-class LogMessageForm(forms.ModelForm):
+class InvitesForm(forms.ModelForm):
     class Meta:
-        model = LogMessage
-        fields = ("message",)   # NOTE: the trailing comma is required
+        model = Invite
+        fields = ['nom', 'prenom', 'email', 'presence_confirme', 'preferences_alimentaires']
